@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gaming.tournamentpubg.ui.activities.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/newblue"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:textColorHint="@color/newblack">
+
+            <EditText
+                android:id="@+id/username_main"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+                android:hint="Username"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/newblack">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:id="@+id/password_main"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="20dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:id="@+id/signin_main"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:background="@color/newgreen"
+
+       />
+    </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardUseCompatPadding="true"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="20dp">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create new account"
+        android:id="@+id/createnewaccount"
+        android:textStyle="bold"
+        android:background="@color/newred"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+
+        />
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="resetpass word"
+        android:id="@+id/resetpassword"
+        android:paddingTop="10dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/newblack"
+           />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/newblue">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/newblue"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Me"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="125dp"
+                android:layout_marginRight="30dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="5dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/newgreen"
+                    android:orientation="horizontal"
+                    android:id="@+id/staticsresult"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/matchesplayed"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="##"
+
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Matches\nPlayed"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                            android:textColor="@color/white"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="##"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:id="@+id/totalkilled"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+
+                        />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Total\nKilled"
+
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                            android:textColor="@color/white"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@color/white" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/amountwon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="##"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:text="Amount\nWon"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+
+                        android:textColor="@color/white"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        />
+                </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="175dp"
+                    android:background="@color/newblue"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="15dp"
+                    android:paddingRight="30dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/newblue"
+                        android:orientation="horizontal">
+
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+
+                            android:layout_gravity="center"
+                            app:cardCornerRadius="5dp"
+                            >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@color/white"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                            <ImageView
+                                android:id="@+id/test"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/profile"
+                                />
+                        </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="110dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="20dp"
+                                    android:text="Username"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="20dp"
+                                    android:text="Balance"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+
+                                    android:text=": "
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+
+                                    android:text=": "
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/username"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="0dp"
+                                    android:text="Username"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/playcoin"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="0dp"
+                                    android:text="Balance"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+                                    />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="55dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="15dp"
+                        app:cardCornerRadius="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+
+                            <TextView
+                                android:id="@+id/myprofile"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/myprofile"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="My Profile"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="#DADADA" />
+
+
+                            <TextView
+                                android:id="@+id/mywallet"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/mywallet"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="My Wallet"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+                            <TextView
+                                android:id="@+id/mystatisics"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/mystatics"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="My Statics"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+                            <TextView
+                                android:id="@+id/myreff"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/myreferrals"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="My Referrals"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+
+
+                            <TextView
+                                android:id="@+id/topplayer"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/topplayers"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="Top Players"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+                            <TextView
+                                android:id="@+id/leaderboard"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/leaderboard"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="Leaderboard"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/notifications"-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="35dp"-->
+<!--                                android:layout_margin="10dp"-->
+<!--                                android:drawableLeft="@drawable/notification_yellow"-->
+<!--                                android:drawableRight="@drawable/aeroright"-->
+<!--                                android:drawablePadding="20dp"-->
+<!--                                android:paddingLeft="15dp"-->
+<!--                                android:gravity="center_vertical"-->
+<!--                                android:text="Notifications"-->
+<!--                                android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+<!--                                android:textColor="@color/newblack"
+                                    android:textStyle="bold"/>-->
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="1dp"-->
+
+<!--                                android:background="#DADADA" />-->
+
+                            <TextView
+                                android:id="@+id/howto"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/help"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="App Tutorial"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+                           <!-- <TextView
+                                android:id="@+id/adminmessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/sms"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="20dp"
+                                android:paddingLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="Admin Messages"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"/>
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />-->
+
+
+                            <TextView
+                                android:id="@+id/aboutus"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/aboutus"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="About Us"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+
+                            <TextView
+                                android:id="@+id/customersupport"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/customersupport"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="Customer Support"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+
+                            <TextView
+                                android:id="@+id/shareapp"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/shareyellow"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="Share App"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+
+
+                            <TextView
+                                android:id="@+id/tandc"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/termandconditon"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="Terms and Conditions"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+                            <TextView
+                                android:id="@+id/logout"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_margin="10dp"
+                                android:drawableLeft="@drawable/logout"
+                                android:drawableRight="@drawable/aeroright"
+                                android:drawablePadding="10dp"
+                                android:paddingLeft="0dp"
+                                android:gravity="center_vertical"
+                                android:text="Logout"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+
+                                android:background="#DADADA" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:gravity="center"
+                                android:textColor="@color/newblack"
+                                android:text="Version : 1.0.0"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:id="@+id/appversion"
+                                />
+
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

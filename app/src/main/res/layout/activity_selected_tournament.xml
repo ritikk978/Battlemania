@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gaming.tournamentpubg.ui.activities.SelectedTournamentActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/newblue"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/left_aero"
+            android:id="@+id/backfromselectedmatch"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#####"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/matchtitlebar"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="40dp"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="-5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:cardCornerRadius="5dp"
+                android:id="@+id/imageviewselectedcardview">
+
+
+                <ImageView
+                    android:id="@+id/imageviewselected"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY" android:layout_marginBottom="5dp"/>
+            </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/newblue"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+               >
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appbarnewinselectedtournament"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/newblue">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabLayoutnewinselectedtournament"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        app:tabGravity="fill"
+                        app:tabIndicatorColor="@color/white"
+                        app:tabIndicatorHeight="0dp"
+                        app:tabIndicatorGravity="bottom"
+                        app:tabMode="fixed"
+                        app:tabSelectedTextColor="@color/white"
+                        app:tabTextColor="@color/white"/>
+
+
+                </com.google.android.material.appbar.AppBarLayout>
+
+
+            </LinearLayout>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagernewinselectedtournament"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                   />
+
+
+
+        </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:text="Join now"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+
+        android:id="@+id/joinnow"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:background="@color/newred"
+
+
+        />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gaming.tournamentpubg.ui.activities.ReferandEarnActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="REFER MORE TO EARN MORE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:textColor="@color/newgreen"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        />
+
+    <TextView
+        style="@style/Base.Widget.MaterialComponents.TextView"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="*******************"
+
+        android:id="@+id/referdetail"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="YOUR REFERRAL CODE"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/newgreen"
+        />
+
+    <TextView
+        android:id="@+id/promo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="REFERRAL CODE"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/newblack"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/copy_icon"
+        android:drawablePadding="30dp"
+        android:paddingLeft="30dp"
+        />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/how_refer_earn"
+        android:paddingTop="10dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="0dp"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        app:cardCornerRadius="5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/refernow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/newgreen"
+            android:text="REFER NOW"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:paddingTop="5dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

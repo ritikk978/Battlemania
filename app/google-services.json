@@ -1,0 +1,117 @@
+{
+  "project_info": {
+    "project_number": "300217585625",
+    "firebase_url": "https://pubg-tournament-ac883.firebaseio.com",
+    "project_id": "pubg-tournament-ac883",
+    "storage_bucket": "pubg-tournament-ac883.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300217585625:android:35c66865dfc44207ffd3c8",
+        "android_client_info": {
+          "package_name": "com.official.gold.gaming.tournamentpubg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300217585625-r2r3ftv326ql2e8fuugf3u89ptm74glf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.gold.gaming.tournamentpubg",
+            "certificate_hash": "2e9a712931c9bb6f3af008c5298454c3a06adfe6"
+          }
+        },
+        {
+          "client_id": "300217585625-1187flr981luslhshkdsti650vn2blnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.gold.gaming.tournamentpubg",
+            "certificate_hash": "c6b8f5f7c36f7cbb04c0e63163c153199a425a58"
+          }
+        },
+        {
+          "client_id": "300217585625-j48ofjcjja6lujhkmsn06ugfh2ddt33u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.gold.gaming.tournamentpubg",
+            "certificate_hash": "574c604d699dffd0bc9e1e7a0c2d864296647d0f"
+          }
+        },
+        {
+          "client_id": "300217585625-5mp5evumen79cs1drkfqeuqf21qp0v6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnhlhDGlYloevidAFxoH_ApXrwfszRLek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300217585625-5mp5evumen79cs1drkfqeuqf21qp0v6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300217585625:android:a65c98b220ba30e2ffd3c8",
+        "android_client_info": {
+          "package_name": "com.official.gold.gaming.tournaments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300217585625-9984jv7v7kvfmrgo6ml56d90otd9k75u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.gold.gaming.tournaments",
+            "certificate_hash": "2e9a712931c9bb6f3af008c5298454c3a06adfe6"
+          }
+        },
+        {
+          "client_id": "300217585625-c5n1s2urhhheoplbk8ve7gspuhdf81ll.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.gold.gaming.tournaments",
+            "certificate_hash": "c6b8f5f7c36f7cbb04c0e63163c153199a425a58"
+          }
+        },
+        {
+          "client_id": "300217585625-o9fvt2u6cpeukcvhqdsqh0ed9j2f0ahv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.official.gold.gaming.tournaments",
+            "certificate_hash": "574c604d699dffd0bc9e1e7a0c2d864296647d0f"
+          }
+        },
+        {
+          "client_id": "300217585625-5mp5evumen79cs1drkfqeuqf21qp0v6b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnhlhDGlYloevidAFxoH_ApXrwfszRLek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300217585625-5mp5evumen79cs1drkfqeuqf21qp0v6b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

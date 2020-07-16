@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="##"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack"
+        android:id="@+id/no_mystatistics"
+        android:layout_marginLeft="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Match title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/newblack"
+            android:textStyle="bold"
+            android:id="@+id/title_mystatistics"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/newblack"
+            android:id="@+id/time_mystatistics"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="₹ ##"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack"
+        android:id="@+id/paid"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:text="₹ ##"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack"
+        android:id="@+id/won"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DADADA"
+        android:layout_marginTop="10dp" />
+
+
+
+
+</LinearLayout>

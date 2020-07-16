@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pullToRefreshselecttournament">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+
+                <TextView
+                    android:id="@+id/matchtitleandnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+
+
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Match title &amp; number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/newgreen"
+                    />
+
+
+
+                <com.google.android.flexbox.FlexboxLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:flexWrap="wrap"
+                    app:alignItems="stretch"
+                    app:alignContent="stretch" >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Team : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/team"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Solo"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" >
+
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Entry Fee : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/entryfee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="₹ ##"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Mode : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/mode"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="TPP"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Match Type : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/matchtype"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="PAID"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp" >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Map : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/map"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Erangel"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Match Schedule : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/matchschedule"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="00000000000000"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/roomdetailll"
+                    android:visibility="gone">
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+
+
+                            android:paddingTop="10dp"
+                            android:paddingBottom="0dp"
+                            android:text="Room Detail"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textSize="16sp"
+                            android:textColor="@color/newgreen"
+                            android:textStyle="bold"
+                            />
+
+                <com.google.android.flexbox.FlexboxLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:flexWrap="wrap"
+                    app:alignItems="stretch"
+                    app:alignContent="stretch" >
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Id : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+                            <TextView
+                                android:id="@+id/roomid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                android:drawableRight="@drawable/copy_icon"
+                                android:drawablePadding="10dp"
+
+                                />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Password : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+                            <TextView
+                                android:id="@+id/roompass"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="123456"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                android:drawableRight="@drawable/copy_icon"
+
+                                android:drawablePadding="10dp"
+                                />
+
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="Play Now"
+                                    android:id="@+id/playnow"
+                                    android:textColor="@color/white"
+                                    android:background="@color/newred"
+                                    android:minHeight="0dp"
+                                    android:minWidth="0dp"
+                                    android:paddingLeft="5dp"
+                                    android:paddingRight="5dp"
+                                    android:paddingTop="4dp"
+                                    android:paddingBottom="2dp"
+
+
+                                    />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+
+                </com.google.android.flexbox.FlexboxLayout>
+                </LinearLayout>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:layout_marginBottom="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:id="@+id/registereddata"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@color/newgreen"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Team"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="110dp"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Position"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Pubg Name"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical"
+                            android:id="@+id/joinedll">
+
+
+
+
+                        </LinearLayout>
+
+
+                       <!-- <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/refll"
+                            android:orientation="vertical"/>-->
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+
+                            android:paddingTop="10dp"
+                            android:paddingBottom="0dp"
+                            android:text="Price Details"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textSize="16sp"
+                            android:textColor="@color/newgreen"
+                            android:textStyle="bold"
+                            />
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:flexWrap="wrap"
+                    app:alignItems="stretch"
+                    app:alignContent="stretch">
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        >
+
+
+                    <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Winning Prize : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/winningprize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="₹ ###"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardUseCompatPadding="true"
+                        app:cardCornerRadius="3dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        >
+
+
+                    <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+
+                                android:gravity="center"
+                                android:text="Per Kill : "
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                />
+
+                            <TextView
+                                android:id="@+id/perkill"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="₹ ##"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                                android:textColor="@color/newblack"
+                                android:textStyle="bold"
+                                />
+                    </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </com.google.android.flexbox.FlexboxLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/sponsorll"
+                    android:visibility="gone">
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="Match Sponsor"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="16sp"
+                    android:textColor="@color/newgreen"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:textColor="@color/newblack"
+                    android:paddingTop="10dp"
+
+                    android:text="sponsor..........."
+                    android:id="@+id/sponsor"
+
+                    />
+                </LinearLayout>
+
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+
+                    android:paddingTop="10dp"
+                    android:paddingBottom="0dp"
+                    android:text="About this Match"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textSize="16sp"
+                    android:textColor="@color/newgreen"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:textColor="@color/newblack"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="About this Match"
+                    android:id="@+id/about"
+
+                    />
+            </LinearLayout>
+
+
+        </ScrollView>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.official.gold">
+
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".gaming.tournamentpubg.utils.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/battlemanialogo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/battlemanialogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+      <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2197320046181243~2783356458" />
+
+        <activity android:name=".gaming.tournamentpubg.ui.activities.TermsandConditionActivity"></activity>
+        <activity android:name=".gaming.tournamentpubg.ui.activities.LeaderboardActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.WithdrawMoneyActivity"
+            android:theme="@style/AppThemeplaceholder"/>
+        <activity android:name=".gaming.tournamentpubg.ui.activities.AddMoneyActivity"
+            android:theme="@style/AppThemeplaceholder"/>
+        <activity android:name=".gaming.tournamentpubg.ui.activities.MyReferralsActivity" />
+        <activity
+            android:name=".gaming.tournamentpubg.ui.activities.ReferandEarnActivity"
+            android:label=""
+            android:theme="@style/AppThemetest" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.SelectedGameActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.AppUpdateActivity" />
+        <activity
+            android:name=".gaming.tournamentpubg.ui.activities.HowtoActivity"
+            android:configChanges="orientation|screenSize" />
+
+        <provider
+            android:name=".gaming.tournamentpubg.utils.GenericFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <receiver android:name=".gaming.tournamentpubg.utils.InstallReceivernew">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_CHANGED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".gaming.tournamentpubg.ui.activities.FirstActivity"
+            android:theme="@style/AppThemeforfirstpage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".gaming.tournamentpubg.ui.activities.NoInternetActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.SuccessJoinActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.SelectMatchPositionActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.SelectedResultActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.CustomerSupportActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.AboutusActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.TopPlayerActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.MyStatisticsActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.SelectedTournamentActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.JoiningMatch"
+            android:theme="@style/AppThemeplaceholder"/>
+        <activity android:name=".gaming.tournamentpubg.ui.activities.TansactionSuccessActivity" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.TransactionFailActivity" />
+        <!--
+  <activity
+            android:name=".ui.login.TransactionSuccessActivity"
+            android:label="@string/title_activity_transaction_success" />
+        -->
+        <activity android:name=".gaming.tournamentpubg.ui.activities.MyProfileActivity"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gaming.tournamentpubg.ui.activities.MyWalletActivity"
+
+             />
+        <activity
+            android:name=".gaming.tournamentpubg.ui.activities.HomeActivity"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.CreateNewAccount"
+            android:theme="@style/AppThemeplaceholder" />
+        <activity android:name=".gaming.tournamentpubg.ui.activities.MainActivity"
+            android:theme="@style/AppThemeplaceholder" />
+    </application>
+
+</manifest>

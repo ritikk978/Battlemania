@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gold Gaming</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="api">http://goldgaming.in/battlemania/api/</string>
+
+    <string name="Rs"
+        formatted="false"
+        translatable="true">\u20B9</string>
+
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="Team"
+            android:gravity="center"
+            android:id="@+id/jointeam"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/newblack"
+            />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+
+            android:text="Position"
+            android:gravity="center"
+            android:id="@+id/joinposition"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/newblack"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text=""
+            android:gravity="center"
+            android:id="@+id/joinpubgname"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:textColor="@color/newblack"
+            android:enabled="true"
+            />
+    </LinearLayout>
+
+</LinearLayout>

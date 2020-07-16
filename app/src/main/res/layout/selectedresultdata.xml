@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="0dp">
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="#"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack"
+        android:id="@+id/no"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Player Name1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack"
+        android:id="@+id/pname"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Kills"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack"
+        android:id="@+id/kills"
+        />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Wining"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/newblack"
+        android:id="@+id/wining"
+        />
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DADADA" />
+</LinearLayout>

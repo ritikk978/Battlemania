@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gaming.tournamentpubg.ui.activities.HomeActivity">
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"/>
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/view_pager"
+            android:layout_gravity="bottom"
+            android:gravity="bottom">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/newblue"
+                app:tabMode="fixed"
+                app:tabGravity="fill"
+
+                app:tabTextAppearance="@style/CustomTextStyle"
+                android:layout_gravity="center"
+                />
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
